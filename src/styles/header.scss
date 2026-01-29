@@ -1,15 +1,16 @@
 .header{
+  min-height: 100vh;
   border-radius: 0 0 30px 30px;
   background-color: $header-bg-color;
-  min-height: 100vh;
 
   &__content{
-    max-width: 1600px;
-    margin-inline: auto;
     display: flex;
     flex-direction: column;
+
     box-sizing: border-box;
+    max-width: 1600px;
     min-height: 100vh;
+    margin-inline: auto;
   }
 
   &__bottom{
@@ -48,10 +49,10 @@
   }
 
   &__right{
-    flex-grow: 1;
     display: flex;
     grid-column: 1 /-1;
     flex-direction: column;
+    flex-grow: 1;
 
     height: 100%;
     min-height: 400px;
