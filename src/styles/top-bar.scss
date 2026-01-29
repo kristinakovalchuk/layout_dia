@@ -1,0 +1,45 @@
+.top-bar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 0;
+  padding-top: 18px;
+
+  @include content-padding-inline;
+
+  @include on-desktop{
+    padding-top: 48px;
+  }
+
+  &__min{
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo{
+    &--link{
+      padding-right: 32px;
+    }
+  }
+
+  &__nav-menu{
+    display: none;
+    justify-content: center;
+
+    @include on-desktop{
+      display: flex;
+    }
+
+  }
+
+  &__nav--list{
+    display: flex;
+    gap: 48px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+}

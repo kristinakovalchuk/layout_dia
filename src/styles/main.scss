@@ -1,7 +1,18 @@
 @import 'utils';
 @import 'fonts';
 @import 'typography';
+@import './header';
+@import './icon';
+@import './top-bar';
+@import './nav-link';
 
 body {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
   background: $c-gray;
+}
+
+.container{
+  @include content-padding-inline;
 }
