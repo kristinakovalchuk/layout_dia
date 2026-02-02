@@ -33,4 +33,15 @@
     background-position: center;
     background-size: 18px 18px;
   }
+
+  &--arrow-forward{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    background-color: $main-blue-color;
+    background-image: url('../images/slider/mdi_arrow_forward.svg');
+    background-position: center;
+    background-size: 24px 24px;
+  }
 }

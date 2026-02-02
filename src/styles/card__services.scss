@@ -1,0 +1,60 @@
+.card__services{
+  background-color: $main-text-color-white;
+  border-radius: 16px;
+  box-shadow: 0 9px 18px 0 #25293108;
+  height: 262px;
+
+  &__container{
+    padding-inline: 23px;
+    padding-block: 32px;
+  }
+
+  &__numbers-container{
+    display: flex;
+    width: 46px;
+    height: 24px;
+    border-radius: 23px;
+    background-color: rgba($main-blue-color, 0.1);
+    margin:0 0 24px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__number{
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: $main-blue-color;
+    margin: 0;
+  }
+
+  &__description{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1.5;
+    letter-spacing: 0;
+    margin: 0 0 32px;
+    color: $main-description-grey-color;
+  }
+
+  &__link{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+
+    &--text{
+      margin: 0;
+      font-family: Poppins, sans-serif;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 1;
+      letter-spacing: 0;
+      color: $main-blue-color;
+      text-decoration: none;
+    }
+  }
+}
