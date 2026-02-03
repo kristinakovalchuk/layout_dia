@@ -31,7 +31,7 @@
               <li><a href="#who-we-are" class="nav-link">About us</a></li>
               <li><a href="#services" class="nav-link">Services</a></li>
               <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
-              <li><a href="#" class="nav-link">Contact Us</a></li>
+              <li><a href="#contact_us" class="nav-link">Contact Us</a></li>
             </ul>
           </nav>
           <a href="#" class="nav-link nav-link--one">Hire us</a>
@@ -296,7 +296,105 @@
     </main>
 
     <footer class="footer">
+      <div class="footer__wrapper">
 
+        <div class="container">
+          <div class="footer__content">
+
+            <div class="message">
+              <p class="message__title">Send us  a message</p>
+
+              <div class="contact__inputs">
+                <form
+                  class="message__input"
+                  onsubmit="this.reset(); return false;"
+                >
+                  <input
+                    class="message__input--text"
+                    type="text"
+                    placeholder="Your name"
+                    required
+                  />
+
+                  <input
+                    class="message__input--text"
+                    type="email"
+                    placeholder="Your email"
+                    required
+                  />
+
+                  <input
+                    class="message__input--text"
+                    type="text"
+                    placeholder="Your massage"
+                    required
+                  />
+
+                  <button
+                    type="submit"
+                    class="message__button"
+                    data-qa="hover">
+                    Send
+                  </button>
+                </form>
+              </div>
+            </div>
+
+            <section class="contact_us" id="contact_us">
+
+              <p class="contact_us__title">Contact us</p>
+
+              <p class="contact_us__small-title">Call us</p>
+              <a href="tel:654 321 987" class="contact_us__description">654 321 987</a>
+
+              <p class="contact_us__small-title">Visit us</p>
+              <a href="https://maps.app.goo.gl/J9HsGo8R9nn7H44t7" class="contact_us__description">2905 West Drive, Buffalo Grove</a>
+
+
+              <p class="contact_us__small-title">our socials</p>
+
+              <div class="contact_us__icons">
+                <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="icon icon--facebook"></a>
+
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="icon icon--instagram"></a>
+
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                class="icon icon--twitter"></a>
+              </div>
+
+            </section>
+
+            <div class="bottom-bar">
+                <a href="#" class="bottom-bar__logo--link">
+                  <img
+                    class="bottom-bar__logo"
+                    src="./src/images/logo/dia-logo.svg"
+                    alt="logo"
+                  >
+                </a>
+
+              <nav class="bottom-bar__nav-menu">
+                <ul class="bottom-bar__nav--list">
+                  <li><a href="#who-we-are" class="nav-link">About us</a></li>
+                  <li><a href="#" class="nav-link">Home</a></li>
+                  <li><a href="#services" class="nav-link">Services</a></li>
+                  <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                  <li><a href="#contact_us" class="nav-link">Contact Us</a></li>
+                </ul>
+              </nav>
+            </div>
+
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="src/scripts/main.js"></script>
   </body>

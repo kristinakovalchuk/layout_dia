@@ -49,4 +49,37 @@
     margin-bottom: 16px;
     text-align: center;
   }
+
+  &--facebook{
+    width: 32px;
+    height: 32px;
+    margin-top: 8px;
+    background-image: url('../images/footer/facebook.svg');
+
+    &:hover{
+      background-image: url('../images/footer/facebook-blue.svg');
+    }
+  }
+
+  &--twitter{
+    width: 32px;
+    height: 32px;
+    margin-top: 8px;
+    background-image: url('../images/footer/Layer-2.svg');
+
+    &:hover{
+      background-image: url('../images/footer/Layer-2-blue.svg');
+    }
+  }
+
+  &--instagram{
+    width: 32px;
+    height: 32px;
+    margin-top: 8px;
+    background-image: url('../images/footer/instagram.svg');
+
+    &:hover{
+      background-image: url('../images/footer/instagram-blue.svg');
+    }
+  }
 }
