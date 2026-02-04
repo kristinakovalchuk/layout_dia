@@ -107,7 +107,14 @@
 
     background-color: $main-blue-color;
 
-    @include hover(transform, scale(1.05));
+    transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+      background-color: $hover-button-color;
+    }
 
     @include on-tablet {
       margin-top: 32px;
@@ -171,8 +178,11 @@
     color: $main-text-color-white;
     text-decoration: none;
     letter-spacing: 0;
+    transition: color 0.3s ease-in-out;
 
-    @include hover(transform, scale(1.1));
+    &:hover{
+      color: $main-blue-color;
+    }
   }
 
   &__icons {

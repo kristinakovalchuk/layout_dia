@@ -49,7 +49,7 @@
     background-color: $main-text-color-white;
     box-shadow: 0 9px 18px 0 #25293108;
 
-    @include hover(transform, translateY(-7%));
+    @include hover(transform, scale(1.05));
 
     @include on-tablet {
       height: 478px;
