@@ -19,6 +19,8 @@
     width: 280px;
     margin-inline: auto;
 
+    @include hover(transform, translateY(-7%));
+
     @include on-tablet {
       width: 100%;
       &:nth-child(even) {
@@ -28,6 +30,8 @@
       &:nth-child(odd) {
         transform: translateY(-131px);
         grid-column: 4 / 7;
+
+        @include hover(transform, translateY(-57%));
       }
     }
 

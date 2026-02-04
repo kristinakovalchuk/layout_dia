@@ -4,6 +4,7 @@
   background-color: $main-text-color-white;
   box-shadow: 0 9px 18px 0 #25293108;
 
+
   &__container{
     padding-block: 32px;
     padding-inline: 23px;
@@ -49,6 +50,8 @@
     display: flex;
     gap: 16px;
     align-items: center;
+
+    @include hover(transform, translateX(7%));
 
     &--text{
       margin: 0;

@@ -1,6 +1,6 @@
 .result{
-  background-color: $main-text-color-white;
   padding-block: 72px;
+  background-color: $main-text-color-white;
 
   @include on-tablet{
     padding-block: 63px 168px;
@@ -21,8 +21,8 @@
     background-size: cover;
 
     @include on-tablet{
-      background-image: url('../images/Shapes.png');
       min-height: 508px;
+      background-image: url('../images/Shapes.png');
     }
 
     @include on-desktop{
@@ -37,8 +37,8 @@
   &__wrapper{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 
     @include on-tablet{
       padding-block: 137px 0;
@@ -55,14 +55,15 @@
 
   &__title{
     margin: 0 0 24px;
+
     font-family: Poppins, sans-serif;
-    font-weight: 600;
     font-size: 44px;
+    font-weight: 600;
     line-height: 1.2;
-    letter-spacing: 0;
-    text-align: center;
-    vertical-align: middle;
     color: $main-title-blue-color;
+    text-align: center;
+    letter-spacing: 0;
+    vertical-align: middle;
 
     @include on-tablet{
       width: 500px;
@@ -75,13 +76,14 @@
 
   &__description{
     margin: 0 0 56px;
+
     font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
     font-size: 24px;
+    font-weight: 600;
     line-height: 1.5;
-    letter-spacing: 0;
-    text-align: center;
     color: $main-description-grey-color;
+    text-align: center;
+    letter-spacing: 0;
 
     @include on-tablet{
       max-width: 750px;
@@ -94,10 +96,10 @@
     align-items: center;
     justify-content: center;
 
+    width: 100%;
     height: 50px;
     margin: 0;
     border-radius: 8px;
-    width: 100%;
 
     font-family: Poppins, sans-serif;
     font-size: 15px;
@@ -109,6 +111,8 @@
     letter-spacing: 0;
 
     background-color: $main-blue-color;
+
+    @include hover(transform, scale(1.1));
 
     @include on-tablet{
       width: 264px;

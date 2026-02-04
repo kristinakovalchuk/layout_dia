@@ -7,6 +7,8 @@
     display: flex;
     background-image: url('../images/slider/Menu.svg');
 
+    @include hover(transform, scale(1.2));
+
     @include on-desktop{
       display: none;
     }
@@ -21,6 +23,8 @@
     background-image: url('../images/slider/mdi_chevron_left.svg');
     background-position: center;
     background-size: 18px 18px;
+
+    @include hover(transform, scale(1.2));
   }
 
   &--arrow-right{
@@ -32,6 +36,8 @@
     background-image: url('../images/slider/mdi_chevron_right.svg');
     background-position: center;
     background-size: 18px 18px;
+
+    @include hover(transform, scale(1.2));
   }
 
   &--arrow-forward{
@@ -56,7 +62,10 @@
     margin-top: 8px;
     background-image: url('../images/footer/facebook.svg');
 
-    &:hover{
+    transition: transform 0.3s, background-image 0.3s;
+
+    &:hover {
+      transform: scale(1.3);
       background-image: url('../images/footer/facebook-blue.svg');
     }
   }
@@ -67,7 +76,10 @@
     margin-top: 8px;
     background-image: url('../images/footer/Layer-2.svg');
 
-    &:hover{
+    transition: transform 0.3s, background-image 0.3s;
+
+    &:hover {
+      transform: scale(1.3);
       background-image: url('../images/footer/Layer-2-blue.svg');
     }
   }
@@ -78,7 +90,10 @@
     margin-top: 8px;
     background-image: url('../images/footer/instagram.svg');
 
-    &:hover{
+    transition: transform 0.3s, background-image 0.3s;
+
+    &:hover {
+      transform: scale(1.3);
       background-image: url('../images/footer/instagram-blue.svg');
     }
   }

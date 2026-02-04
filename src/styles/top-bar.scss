@@ -18,6 +18,8 @@
   }
 
   &__logo{
+    @include hover(transform, scale(1.2));
+
     &--link{
       padding-right: 32px;
     }
@@ -46,9 +48,8 @@
 
 .bottom-bar{
   display: flex;
-  flex-direction: column;
-
   grid-column: 1 /-1;
+  flex-direction: column;
 
   @include on-tablet{
     margin-top: 19px;
@@ -66,6 +67,8 @@
   &__logo{
     margin-bottom: 49px;
 
+    @include hover(transform, scale(1.2));
+
     @include on-tablet{
       margin-bottom: 24px;
     }
@@ -80,11 +83,12 @@
   &__nav--list{
     display: flex;
     flex-direction: column;
-    width: 100%;
-
     gap: 24px;
+
+    width: 100%;
     margin: 0;
     padding: 0;
+
     list-style: none;
 
     @include on-tablet{
@@ -94,8 +98,8 @@
 
     @include on-desktop{
       flex-direction: row;
-      justify-content: end;
       gap: 64px;
+      justify-content: end;
     }
   }
 }

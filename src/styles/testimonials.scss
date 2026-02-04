@@ -49,6 +49,8 @@
     background-color: $main-text-color-white;
     box-shadow: 0 9px 18px 0 #25293108;
 
+    @include hover(transform, translateY(-7%));
+
     @include on-tablet{
       height: 478px;
     }
@@ -72,6 +74,8 @@
     border-radius: 50%;
 
     object-fit: cover;
+
+    @include hover(transform, scale(1.1));
 
     @include on-tablet{
       width: 140px;
