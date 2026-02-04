@@ -1,9 +1,9 @@
-.header{
+.header {
   min-height: 100vh;
   border-radius: 0 0 30px 30px;
   background-color: $header-bg-color;
 
-  &__content{
+  &__content {
     display: flex;
     flex-direction: column;
 
@@ -13,42 +13,41 @@
     margin-inline: auto;
   }
 
-  &__bottom{
+  &__bottom {
     flex-grow: 1;
     margin-top: 48px;
 
     @include page-grid;
 
-    @include on-tablet{
+    @include on-tablet {
       margin-top: 56px;
     }
 
-    @include on-desktop{
+    @include on-desktop {
       height: 100%;
       margin-top: 38px;
     }
   }
 
-   &__left{
+  &__left {
     display: block;
     grid-column: 1 /-1;
     margin-bottom: 48px;
 
     @include content-padding-inline;
 
-
-    @include on-tablet{
+    @include on-tablet {
       margin-bottom: 147px;
     }
 
-    @include on-desktop{
+    @include on-desktop {
       grid-column: 1 /7;
       margin-bottom: 0;
       padding-block: 164px 0;
     }
   }
 
-  &__right{
+  &__right {
     display: flex;
     grid-column: 1 /-1;
     flex-direction: column;
@@ -62,38 +61,36 @@
     background-position: center;
     background-size: cover;
 
-    @include on-desktop{
+    @include on-desktop {
       grid-column: 7 /13;
       max-height: 100vh;
       border-radius: 30px 0;
     }
   }
 
-  &__text{
+  &__text {
     margin-top: auto;
 
     @include content-padding-inline;
 
-    @include on-desktop{
+    @include on-desktop {
       display: inline-flex;
       gap: 24px;
       padding-left: 78px;
     }
 
-    &__title{
+    &__title {
       margin-bottom: 32px;
     }
   }
 
-
-  &__arrows{
+  &__arrows {
     display: flex;
     gap: 16px;
     margin-bottom: 16px;
-
   }
 
-  &__title-second{
+  &__title-second {
     margin: 0 0 8px;
 
     font-family: Poppins, sans-serif;
@@ -105,18 +102,18 @@
     letter-spacing: 3px;
   }
 
-  &__description-second{
+  &__description-second {
     max-width: 280px;
     margin: 0;
 
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 140%;
     color: $main-text-color-white;
   }
 
-  &__title-first{
+  &__title-first {
     margin: 0 0 32px;
 
     font-family: Poppins, sans-serif;
@@ -126,37 +123,36 @@
     color: $main-text-color-white;
     letter-spacing: -2px;
 
-    @include on-tablet{
+    @include on-tablet {
       margin: 0 0 24px;
     }
 
-    @include on-desktop{
+    @include on-desktop {
       margin: 0 0 32px;
     }
-
   }
 
-  &__description-first{
+  &__description-first {
     max-width: 362px;
     margin: 0 0 72px;
 
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 150%;
     color: $main-text-color-white;
     letter-spacing: 0;
 
-    @include on-tablet{
+    @include on-tablet {
       margin: 0 0 56px;
     }
 
-    @include on-desktop{
+    @include on-desktop {
       margin: 0 0 83px;
     }
   }
 
-  &__button{
+  &__button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -178,13 +174,8 @@
 
     @include hover(transform, scale(1.1));
 
-      @include on-tablet{
+    @include on-tablet {
       width: 246px;
-      }
+    }
   }
-
 }
-
-
-
-

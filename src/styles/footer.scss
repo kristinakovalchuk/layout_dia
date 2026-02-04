@@ -1,41 +1,40 @@
-.footer{
-  border: 1px solid #FFF;
+.footer {
+  border: 1px solid #fff;
   background-color: $main-text-color-white;
 
-  &__wrapper{
+  &__wrapper {
     padding-block: 72px 80px;
     border-radius: 18px 18px 0 0;
     background-color: $header-bg-color;
 
-    @include on-tablet{
+    @include on-tablet {
       padding-block: 180px 80px;
     }
   }
 
-  &__content{
+  &__content {
     row-gap: 80px;
 
     @include page-grid;
 
-    @include on-tablet{
+    @include on-tablet {
       row-gap: 120px;
     }
   }
-
 }
 
-.message{
+.message {
   grid-column: 1 /-1;
 
-  @include on-tablet{
+  @include on-tablet {
     grid-column: 1 / 5;
   }
 
-  @include on-desktop{
+  @include on-desktop {
     grid-column: 1 / 6;
   }
 
-  &__title{
+  &__title {
     margin: 0 0 48px;
 
     font-family: Poppins, sans-serif;
@@ -46,17 +45,17 @@
     letter-spacing: 0;
   }
 
-  &__input{
+  &__input {
     display: flex;
     flex-direction: column;
     gap: 40px;
     width: 100%;
 
-    @include on-tablet{
+    @include on-tablet {
       gap: 48px;
     }
 
-    &--text{
+    &--text {
       height: 23px;
       padding-bottom: 16px;
       border: 0;
@@ -75,19 +74,18 @@
 
       @include hover(transform, scale(1.05));
 
-      &:focus{
+      &:focus {
         border-bottom: 2px solid $main-blue-color;
       }
 
-      &::placeholder{
+      &::placeholder {
         color: $main-text-color-white;
         opacity: 50%;
       }
-
     }
   }
 
-  &__button{
+  &__button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -111,29 +109,28 @@
 
     @include hover(transform, scale(1.05));
 
-    @include on-tablet{
+    @include on-tablet {
       margin-top: 32px;
     }
   }
 }
 
-.contact_us{
+.contact_us {
   grid-column: 1 /-1;
 
-  @include on-tablet{
+  @include on-tablet {
     grid-column: 1 / 5;
   }
 
-  @include on-desktop{
+  @include on-desktop {
     grid-column: 7 / -1;
   }
 
-  @include on-desktop-plus{
+  @include on-desktop-plus {
     grid-column: 8 / -1;
   }
 
-
-  &__title{
+  &__title {
     display: block;
 
     margin: 0 0 48px;
@@ -146,7 +143,7 @@
     letter-spacing: 0;
   }
 
-  &__small-title{
+  &__small-title {
     margin: 0 0 8px;
 
     font-family: Poppins, sans-serif;
@@ -160,7 +157,7 @@
     opacity: 50%;
   }
 
-  &__description{
+  &__description {
     transform-origin: center left;
 
     display: block;
@@ -178,7 +175,7 @@
     @include hover(transform, scale(1.1));
   }
 
-  &__icons{
+  &__icons {
     display: flex;
     gap: 32px;
   }

@@ -1,21 +1,21 @@
-.card{
+.card {
   width: 100%;
   padding-bottom: 72px;
 
-  @include on-tablet{
+  @include on-tablet {
     padding-bottom: 128px;
   }
 
-  @include on-desktop{
+  @include on-desktop {
     max-width: 214px;
     padding-bottom: 134px;
   }
 
-  @include on-desktop-plus{
+  @include on-desktop-plus {
     max-width: 266px;
   }
 
-  &__img{
+  &__img {
     display: flex;
 
     width: 166px;
@@ -27,7 +27,7 @@
     object-fit: cover;
   }
 
-  &__title{
+  &__title {
     margin: 0;
     margin-bottom: 16px;
 
@@ -40,10 +40,10 @@
     letter-spacing: 0;
   }
 
-  &__description{
+  &__description {
     margin: 0;
 
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 150%;

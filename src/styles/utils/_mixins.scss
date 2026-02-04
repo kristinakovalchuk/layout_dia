@@ -40,26 +40,26 @@
   }
 }
 
-@mixin page-grid{
+@mixin page-grid {
   --column: 2;
 
   display: grid;
   grid-template-columns: repeat(var(--column), 1fr);
   column-gap: 20px;
 
-  @include on-tablet{
+  @include on-tablet {
     --column: 6;
 
     column-gap: 30px;
   }
 
-  @include on-desktop{
+  @include on-desktop {
     --column: 12;
 
     column-gap: 20px;
   }
 
-  @include on-desktop-plus{
+  @include on-desktop-plus {
     column-gap: 30px;
   }
 }

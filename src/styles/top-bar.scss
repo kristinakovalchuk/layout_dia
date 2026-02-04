@@ -1,4 +1,4 @@
-.top-bar{
+.top-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -8,34 +8,33 @@
 
   @include content-padding-inline;
 
-  @include on-desktop{
+  @include on-desktop {
     padding-top: 48px;
   }
 
-  &__min{
+  &__min {
     display: flex;
     align-items: center;
   }
 
-  &__logo{
+  &__logo {
     @include hover(transform, scale(1.2));
 
-    &--link{
+    &--link {
       padding-right: 32px;
     }
   }
 
-  &__nav-menu{
+  &__nav-menu {
     display: none;
     justify-content: center;
 
-    @include on-desktop{
+    @include on-desktop {
       display: flex;
     }
-
   }
 
-  &__nav--list{
+  &__nav--list {
     display: flex;
     gap: 48px;
 
@@ -46,41 +45,40 @@
   }
 }
 
-.bottom-bar{
+.bottom-bar {
   display: flex;
   grid-column: 1 /-1;
   flex-direction: column;
 
-  @include on-tablet{
+  @include on-tablet {
     margin-top: 19px;
   }
 
-  @include on-tablet{
+  @include on-tablet {
     margin-top: 0;
   }
 
-  @include on-desktop{
+  @include on-desktop {
     flex-direction: row;
     justify-content: space-between;
   }
 
-  &__logo{
+  &__logo {
     margin-bottom: 49px;
 
     @include hover(transform, scale(1.2));
 
-    @include on-tablet{
+    @include on-tablet {
       margin-bottom: 24px;
     }
   }
 
-  &__nav-menu{
+  &__nav-menu {
     display: flex;
     width: 100%;
-
   }
 
-  &__nav--list{
+  &__nav--list {
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -91,12 +89,12 @@
 
     list-style: none;
 
-    @include on-tablet{
+    @include on-tablet {
       flex-direction: row;
       justify-content: space-between;
     }
 
-    @include on-desktop{
+    @include on-desktop {
       flex-direction: row;
       gap: 64px;
       justify-content: end;

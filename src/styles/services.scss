@@ -1,14 +1,14 @@
-.services{
+.services {
   width: 100%;
   margin-block: 148px;
 
-  &__wrapper{
+  &__wrapper {
     row-gap: 24px;
     align-items: center;
 
     @include page-grid;
 
-    @include on-desktop{
+    @include on-desktop {
       padding-top: 148px;
     }
   }
@@ -57,23 +57,22 @@
     }
   }
 
-  &__text{
+  &__text {
     grid-column: 1 / -1;
     margin-bottom: 24px;
 
-    @include on-tablet{
+    @include on-tablet {
       grid-column: span 3;
       margin-bottom: 32px;
     }
 
-    @include on-desktop{
+    @include on-desktop {
       grid-column: span 4;
       margin-bottom: 0;
     }
-
   }
 
-  &__small-titte{
+  &__small-titte {
     margin: 0;
     margin-bottom: 16px;
     padding: 0;
@@ -87,7 +86,7 @@
     letter-spacing: 3px;
   }
 
-  &__big-title{
+  &__big-title {
     margin: 0 0 32px;
 
     font-family: Poppins, sans-serif;
@@ -99,7 +98,7 @@
     vertical-align: middle;
   }
 
-  &__description{
+  &__description {
     margin: 0;
 
     font-family: 'Open Sans', sans-serif;

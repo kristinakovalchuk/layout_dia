@@ -1,59 +1,59 @@
-.result{
+.result {
   padding-block: 72px;
   background-color: $main-text-color-white;
 
-  @include on-tablet{
+  @include on-tablet {
     padding-block: 63px 168px;
   }
 
-  @include on-desktop{
+  @include on-desktop {
     padding-block: 83px 119px;
   }
 
-  @include on-desktop-plus{
+  @include on-desktop-plus {
     padding-block: 72px;
   }
 
-  &__content{
+  &__content {
     max-width: 1450px;
     margin-inline: auto;
     background-position: center;
     background-size: cover;
 
-    @include on-tablet{
+    @include on-tablet {
       min-height: 508px;
       background-image: url('../images/Shapes.png');
     }
 
-    @include on-desktop{
+    @include on-desktop {
       min-height: 489px;
     }
 
-    @include on-desktop-plus{
+    @include on-desktop-plus {
       min-height: 546px;
     }
   }
 
-  &__wrapper{
+  &__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    @include on-tablet{
+    @include on-tablet {
       padding-block: 137px 0;
     }
 
-    @include on-desktop{
+    @include on-desktop {
       padding-block: 116px 0;
     }
 
-    @include on-desktop-plus{
+    @include on-desktop-plus {
       padding-block: 127px 0;
     }
   }
 
-  &__title{
+  &__title {
     margin: 0 0 24px;
 
     font-family: Poppins, sans-serif;
@@ -65,16 +65,16 @@
     letter-spacing: 0;
     vertical-align: middle;
 
-    @include on-tablet{
+    @include on-tablet {
       width: 500px;
     }
 
-    @include on-desktop{
+    @include on-desktop {
       width: 550px;
     }
   }
 
-  &__description{
+  &__description {
     margin: 0 0 56px;
 
     font-family: 'Open Sans', sans-serif;
@@ -85,13 +85,13 @@
     text-align: center;
     letter-spacing: 0;
 
-    @include on-tablet{
+    @include on-tablet {
       max-width: 750px;
       margin: 0 0 64px;
     }
   }
 
-  &__button{
+  &__button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -114,7 +114,7 @@
 
     @include hover(transform, scale(1.1));
 
-    @include on-tablet{
+    @include on-tablet {
       width: 264px;
     }
   }

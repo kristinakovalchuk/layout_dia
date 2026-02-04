@@ -1,32 +1,30 @@
-.our-expertise{
+.our-expertise {
   border-radius: 30px;
   background-color: $main-text-color-white;
 
-  &__cards{
+  &__cards {
     row-gap: 72px;
 
     @include page-grid;
-
   }
 
-  &__card{
+  &__card {
     overflow: visible;
     grid-column: 1 /-1;
     margin-inline: auto;
 
     @include hover(transform, translateY(-5%));
 
-    @include on-tablet{
-      grid-column: 2 /6 ;
+    @include on-tablet {
+      grid-column: 2 /6;
     }
 
     @include on-desktop {
       grid-column: span 4;
-
     }
   }
 
-  &__title{
+  &__title {
     margin: 0;
     padding-block: 72px 56px;
 
@@ -38,9 +36,8 @@
     letter-spacing: 0;
     vertical-align: middle;
 
-    @include on-tablet{
-      padding-block: 128px 64px ;
+    @include on-tablet {
+      padding-block: 128px 64px;
     }
-
   }
 }
